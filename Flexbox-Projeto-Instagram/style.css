@@ -1,0 +1,235 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;    
+    color: black;
+    text-decoration: none;    
+    text-align: center;    
+}
+
+body{
+    margin: auto;
+    background-color: #fafafa;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.instagram-page{
+    display: flex;
+    align-items: stretch;
+    max-width: 935px;
+    width: 100%;
+    margin: 32px auto;
+}
+
+.instagram-box-picture{
+    max-width: 467px;    
+    width: 100%;
+}
+
+.instagram-box-picture img{
+    width: 70%;
+}
+
+.instagram-box-login{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%;    
+    margin-top: 12px;    
+}
+
+.instagram-white-box{
+    margin: 0 0 10px;
+    padding: 10px 0;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #DBDBDB;
+    border-radius: 1px;
+}
+
+.instagram-logo{
+    margin-top: 36px;
+    margin-bottom: 12px;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.instagram-logo img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.instagram-login{
+    display: flex;
+    flex-direction: column;
+    margin: 34px 0 10px 0;
+    max-width: 350px;
+    width: 100%;
+}
+
+.instagram-field{
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin: 0 40px 6px;
+    align-items:flex-start;
+    background-color: #fafafa;  
+    color: #262626;
+    font-size: 12px;
+    height: 36px;
+    text-align: left;
+}
+
+.instagram-field span{
+    line-height: 36px;
+    color: #8E8E8E;
+    padding-left: 8px;
+    white-space: nowrap;
+}
+
+.instagram-btn-login{
+    border: 1px solid transparent;
+    border-radius: 4px;    
+    margin: 8px 40px;
+    padding: 5px 9px;
+    text-align: center;
+    background-color: #0095f64d;
+    opacity: 1;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.instagram-btn-login span{
+    color: #FFFFFF;
+}
+
+.instagram-other_login{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 40px 18px;
+    align-items: stretch;
+}
+
+.instagram-line-separator{
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #DBDBDB;
+    height: 1px;
+    top: 0.45em;
+    position: relative;    
+}
+
+.instagram-or{
+    margin: 0 18px;
+    line-height: 15px;
+    color: #8E8E8E;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.instagram-login-facebook{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;   
+    justify-content: center;
+    margin: 8px 40px;
+    color: #0095f6;
+}
+
+.instagram-login-facebook img{
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px;    
+}
+
+.instagram-login-facebook span{
+    color: #385185;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 600;    
+}
+
+.instagram-forgot-password{    
+    margin-top: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.instagram-forgot-password span{
+    color: #00376b;
+    font-size: 12px;
+}
+
+#instagram-create-account p{
+    margin: 15px;
+    text-align: center;
+    color: #262626;
+    font-size: 14px;
+}
+
+#instagram-create-account p a{
+    text-decoration: none;
+}
+
+#instagram-create-account p a span{
+    color: #0095f6;
+    font-weight: 600;
+}
+
+.instagram-download-app{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;    
+}
+
+.instagram-download-app p{
+    margin: 10px 20px;
+    text-align: center;
+    line-height: 18px;
+    color: #262626;
+    font-size: 14px;
+}
+
+.instagram-download-app-images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 10px 0;
+}
+
+.instagram-lnk-app-store{
+    margin-right: 8px;
+}
+
+#img-app-store, #img-google-play{
+    height: 40px;
+}
+
+@media (max-width:875px){
+    .instagram-box-picture{
+        display: none;
+    }
+
+    .instagram-box-login{
+        margin: 12px auto;
+    }
+}
+
+@media (max-width:450px){
+    .instagram-page{
+        margin: 0 auto;
+    }
+    
+    .instagram-box-login{
+        margin: 0 auto;
+    }
+    
+    .instagram-white-box{
+        background-color: #fafafa;
+        border-width: 0px;
+    }
+}  
