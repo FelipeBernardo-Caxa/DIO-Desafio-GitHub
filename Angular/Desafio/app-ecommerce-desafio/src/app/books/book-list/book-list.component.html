@@ -1,0 +1,27 @@
+<div class="row">    
+  <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Nome</th>
+        <th>Preço</th>            
+        <th>Categoria</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let book of books">        
+        <td>
+          <img class="bd-placeholder-img card-img-top" height="50px" src='{{ "assets/images/" + book.image + ".jpg" }}' [title]="book.description"></td>
+        <td> {{ book.name}} </td>
+        <td> {{ book.price | currency:'BRL':true:'1.2-2'}} </td>
+        <td> {{ book.category}} </td>
+        <td>
+          <button class="btn btn-primary">Comprar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
